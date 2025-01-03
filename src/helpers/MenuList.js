@@ -5,6 +5,7 @@ import Vegan from "../assets/vegan.jpg";
 import Pineapple from "../assets/pineapple.jpg";
 import Expensive from "../assets/expensive.jpg";
 
+// Defining the menu items as an array of objects
 export const MenuList = [
   {
     name: "Pepperoni Pizza",

@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import Basket from './components/Basket'; // Import Basket component
-import PaymentForm from './components/Payment'; // Import the PaymentForm component
+import PaymentForm from './components/PaymentForm'; // Import the PaymentForm component
 
 function App() {
   const [basket, setBasket] = useState([]);

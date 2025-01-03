@@ -58,6 +58,7 @@
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #000000;
+  text-align: center;
   color: white;
   border: none;
   border-radius: 5px;
@@ -78,4 +79,10 @@
 
 .payButton:focus {
   outline: none; /* Remove outline on focus */
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
 }

@@ -33,7 +33,7 @@
 .addButton {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #4CAF50; /* Green background */
+  background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -42,12 +42,12 @@
 }
 
 .addButton:hover {
-  background-color: #45a049; /* Slightly darker green */
+  background-color: #45a049;
   transform: translateY(-2px); /* Button lift effect */
 }
 
 .addButton:active {
-  background-color: #397d3f; /* Even darker green on click */
+  background-color: #397d3f; 
   transform: translateY(0); /* Button click effect */
 }
 

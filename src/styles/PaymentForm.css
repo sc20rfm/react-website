@@ -27,7 +27,7 @@
   .paymentForm input {
     width: 100%; /* Ensure inputs span the full width of the form */
     padding: 15px; /* Larger padding */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 18px; /* Larger input text */
@@ -35,14 +35,16 @@
   
   .paymentForm button {
     width: 100%;
-    padding: 20px; /* Larger button */
+    padding: 30px; /* Larger button */
     background-color: #4caf50;
     color: white;
-    font-size: 20px; /* Increased font size */
+    font-size: 20px;
     font-weight: bold;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
   }
   
   .paymentForm button:hover {
