@@ -6,22 +6,47 @@ import Menu from './pages/Menu';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+import Basket from './components/Basket'; // Import Basket component
+import PaymentForm from './components/Payment'; // Import the PaymentForm component
 
 function App() {
-	return (
-		<div className="App">
-			<Router>
-				<Navbar />
-				<Routes>
-					<Route path="/" exact element={<Home />} />
-					<Route path="/menu" exact element={<Menu />} />
-					<Route path="/about" exact element={<About />} />
-					<Route path="/contact" exact element={<Contact />} />
-				</Routes>
-				<Footer />
-			</Router>
-		</div>
-	);
+  const [basket, setBasket] = useState([]);
+
+  const handleAddToBasket = (item) => {
+    setBasket((prevBasket) => [...prevBasket, item]);
+  };
+
+  return (
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/menu"
+            element={
+              <Menu 
+                onAddToBasket={handleAddToBasket} 
+                basket={basket} // Pass basket as a prop
+              />
+            }
+          />
+          <Route
+            path="/basket"
+            element={<Basket basket={basket} />}
+          />
+          <Route
+            path="/payment"
+            element={<PaymentForm basket={basket} />} // Payment form route
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
+  );
 }
 
 export default App;

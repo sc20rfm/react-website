@@ -1,0 +1,81 @@
+.basket {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-height: 80vh;
+  overflow-y: auto; /* Allows scrolling if basket content overflows */
+}
+
+.basket h2 {
+  text-align: left;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.basketItemDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.basketItemName {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  flex: 1;
+}
+
+.basketItemPrice {
+  font-size: 16px;
+  color: #ff6347;
+  font-weight: bold;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.basketTotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  color: #333;
+}
+
+.basketTotal span:last-child {
+  color: #ff6347;
+}
+
+.payButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.payButton:hover {
+  background-color: #ffffff; /* Slightly darker green */
+  color: black;
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+.payButton:active {
+  background-color: #397d3f; /* Even darker green on click */
+  transform: translateY(0); /* Button click effect */
+}
+
+.payButton:focus {
+  outline: none; /* Remove outline on focus */
+}

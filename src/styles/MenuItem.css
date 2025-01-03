@@ -1,0 +1,56 @@
+/* MenuItem styling */
+.menuItem {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  width: 250px;
+  text-align: center;
+  padding: 15px;
+}
+
+.menuImage {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.menuItem h1 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.menuItem p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Button Styling */
+.addButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.addButton:hover {
+  background-color: #45a049; /* Slightly darker green */
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+.addButton:active {
+  background-color: #397d3f; /* Even darker green on click */
+  transform: translateY(0); /* Button click effect */
+}
+
+.addButton:focus {
+  outline: none; /* Remove outline on focus */
+}
